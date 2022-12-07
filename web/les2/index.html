@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Hey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        function addItem(html_obj, item)
+        {
+            const obj = document.getElementById(html_obj)
+            const newHeader = document.createElement('h2')
+
+            newHeader.innerHTML = item
+
+            obj.appendChild(newHeader)
+        }
+    </script>
+
+    <h1>Boodschappenlijst</h1>
+
+    <div id="boodschappen">
+        <button onClick="addItem('fruit', 'Appel')">
+            Appel
+        </button>
+
+        <button onClick="addItem('groente', 'Sla')">
+            Sla
+        </button>
+
+        <button onClick="addItem('fruit', 'Kiwi')">
+            Kiwi
+        </button>
+
+        <button onClick="addItem('fruit', 'Banaan')">
+            Banaan
+        </button>
+
+        <button onClick="addItem('groente', 'Broccoli')">
+            Broccoli
+        </button>
+
+        <button onClick="addItem('groente', 'Spruitjes')">
+            Spruitjes
+        </button>
+    </div>
+
+    <div id="koelkast">
+        <section id="groente">
+            <h2>Groente</h2>
+        </section>
+
+        <section id="fruit">
+            <h2>Fruit</h2>
+        </section>
+    </div>
+</body>
+</html>
