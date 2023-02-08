@@ -1,0 +1,20 @@
+body {
+    color: white;
+    background: rgb(254, 254, 254);
+    font-family: 'sans-serif';
+}
+
+#container {
+    background: rgb(103, 103, 103);
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: inset 2px grey;
+}
+
+#title {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
